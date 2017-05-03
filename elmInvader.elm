@@ -517,8 +517,8 @@ view model =
             (moveY (190) (moveX (-375) (toForm (leftAligned (Text.color (red )(fromString ("Aliens Captured! Get to the ship!")))))))
             ])
 
-    else
-      toHtml(
-        collage 1000 500 [
-          (toForm (image 1000 500 "spaceBackground2.jpg")),
-          (moveY (0) (moveX (0) (toForm (leftAligned (Text.color (red )(fromString ("Mission Failure!")))))))])
+      else
+        toHtml(
+          collage 1000 500 [
+            (toForm (image 1000 500 "spaceBackground2.jpg")),
+            (moveY (0) (moveX (0) (toForm (leftAligned (Text.color (red )(fromString ("Mission Failure!")))))))])
